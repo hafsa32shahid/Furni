@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>website</title>
+  </head>
+  <body>
+    <div class="full-body">
+      <div class="header-sec padding">
+        <nav class="navbar">
+          <div class="main-nav">
+            <div class="logo">
+              <a href="#"><h1>Furni</h1></a>
+            </div>
+            <ul
+              class="nav-link d-lg-flex d-sm-none align-content-center justify-content-between"
+            >
+              <li class="nav-item active"><a href="">Home</a></li>
+              <li class="nav-item"><a href="">About us</a></li>
+              <li class="nav-item"><a href="">Services</a></li>
+              <li class="nav-item"><a href="">Blog</a></li>
+              <li class="nav-item"><a href="">Contact us</a></li>
+            </ul>
+            <div class="side-icons">
+              <a href="" class="d-lg-inline d-sm-none"
+                ><i class="fa-regular fa-user m-2"></i
+              ></a>
+              <a href="" class="d-lg-inline d-sm-none"
+                ><i class="fa-solid fa-cart-shopping m-2"></i
+              ></a>
+              <span
+                style="font-size: 30px; cursor: pointer"
+                class="d-lg-none menu"
+                onclick="openNav()"
+                >&#9776;</span
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- The sidebar -->
+        <div class="wrapper">
+          <!-- Overlay -->
+          <div id="overlay" onclick="closeNav()"></div>
+
+          <!-- Sidebar -->
+          <div id="mySidenav" class="sidenav h-100 d-flex flex-column">
+            <h1 class="text-white text-center">Furni</h1>
+            <button
+              type="button"
+              class="btn-close"
+              aria-label="Close"
+              onclick="closeNav()"
+            ></button>
+            <ul class="nav-link mt-4">
+              <li class="nav-item w-100 text-center content">
+                <a href="" class="fs-4 mb-5">Home</a>
+              </li>
+              <li class="nav-item w-100 text-center content">
+                <a href="" class="fs-4 mb-5">About us</a>
+              </li>
+              <li class="nav-item w-100 text-center content">
+                <a href="" class="fs-4 mb-5">Services</a>
+              </li>
+              <li class="nav-item w-100 text-center content">
+                <a href="" class="fs-4 mb-5">Blog</a>
+              </li>
+              <li class="nav-item w-100 text-center content">
+                <a href="" class="fs-4 mb-5">Contact us</a>
+              </li>
+            </ul>
+            <div class="side-icons w-100 text-center mt-5">
+              <a href=""><i class="fa-regular fa-user m-2"></i></a>
+              <a href=""><i class="fa-solid fa-cart-shopping m-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- hero  -->
+        <div
+          class="hero-part row text-lg-start text-sm-center flex-lg-row flex-sm-column flex-sm-column-reverse"
+        >
+          <!-- Left Content -->
+          <div class="left-content col-lg-6">
+            <h1 class="responsive-heading text-anim" >Modern Interior.</h1>
+            <h1 class="responsive-heading text-anim">Design Studio.</h1>
+
+            <div
+              class="bot-btn row flex-row justify-content-lg-start justify-content-sm-center my-5"
+            >
+              <button class="btn1 col-lg-4 mb-0 mb-sm-3">Shop Now</button>
+              <button class="btn2 col-lg-4 ms-lg-3 ms-sm-0 mb-auto">
+                Explore
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="right-img col-lg-6">
+            <img
+              src="./images/sofas-img/sofa-2.png"
+              class="w-100 mt-5 mt-lg-0"
+              alt="Sofa Image"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- about section -->
+      <section
+        class="about-sec h-sm-auto padding flex-column align-content-center text-lg-start text-sm-center"
+      >
+        <div class="row container">
+          <div class="col-lg-5 left-img my-sm-5">
+            <img
+              src="https://img.freepik.com/free-photo/pillow-sofa_74190-4547.jpg?ga=GA1.1.24328383.1694452068&semt=ais_hybrid"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 px-5 right-about my-auto">
+            <h2 class="fw-bold fs-1">Why Choose Us</h2>
+            <p>
+              Discover why we are the best in providing premium products and
+              excellent services. Experience ultimate comfort and style with our
+              premium-quality sofas, designed to elevate your living space.
+            </p>
+            <div class="features">
+              <div class="row g-5 my-auto">
+                <div class="feature col-lg-6">
+                  <i class="fa-solid fa-truck-fast fs-3 mb-2"></i>
+                  <div class="feature-text">
+                    <strong class="mb-2">Fast & Free Shipping</strong>
+                    <p>
+                      Enjoy quick and reliable delivery at no additional cost.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature col-lg-6">
+                  <i class="fa-solid fa-bag-shopping fs-3 mb-2"></i>
+                  <div class="feature-text">
+                    <strong class="mb-2">Easy to Shop</strong>
+                    <p>
+                      Our website is user-friendly, making your shopping
+                      experience seamless.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-5 my-auto">
+                <div class="feature col-lg-6">
+                  <i class="fa-regular fa-user fs-3 mb-2"></i>
+                  <div class="feature-text">
+                    <strong class="mb-2">24/7 Support</strong>
+                    <p>
+                      Our team is available around the clock to assist you with
+                      any queries.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature col-lg-6">
+                  <i class="fa-solid fa-arrow-rotate-left fs-3 mb-2"></i>
+                  <div class="feature-text">
+                    <strong class="mb-2">Hassle-Free Returns</strong>
+                    <p>
+                      Not satisfied? Enjoy easy returns with no complications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- products sec -->
+      <section class="products padding d-flex">
+        <div
+          class="row flex-lg-row flex-sm-column align-content-center text-lg-start text-sm-center container"
+        >
+          <div class="col-lg-4 col-sm-12 m-lg-auto my-sm-5">
+            <h2 class="fw-bold fs-1 fs-sm-4 fs-lg-1">
+              Crafted with excellent material.
+            </h2>
+            <p>
+              Expertly crafted with premium materials, our sofas ensure
+              unmatched durability and style. Experience the perfect blend of
+              comfort and elegance in every detail.
+            </p>
+            <button class="btn btn-3 btn-dark rounded-4 w-50">
+              Explore More
+            </button>
+          </div>
+          <div class="col-lg-8 col-sm-12 ps-0">
+            <div
+              class="row horizontal-scroll-container cards-contain p-3"
+              id="cards-row"
+            >
+              <!-- Cards will be dynamically injected here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- design sec -->
+      <section
+        class="design-sec padding d-flex flex-column align-content-between pt-5"
+      >
+        <div class="container">
+          <div
+            class="row d-flex flex-lg-row flex-md-column align-content-center"
+          >
+            <div class="col-lg-7 col-md-6 col-sm-12 design-images">
+              <div class="img1 w-75 position-absolute start-0">
+                <img
+                  src="https://img.freepik.com/free-photo/pillow-sofa_74190-2746.jpg?ga=GA1.1.24328383.1694452068&semt=ais_tags_boosted"
+                  alt=""
+                  class="h-100"
+                />
+              </div>
+              <div
+                class="img3 w-lg-50 h-75 w-sm-25 position-absolute bottom-0 end-0"
+              >
+                <img
+                  src="https://img.freepik.com/premium-photo/interior-furniture-styling_1048944-8265658.jpg?ga=GA1.1.24328383.1694452068&semt=ais_hybrid"
+                  class="h-100 w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-6 col-sm-12 text-lg-start text-sm-center pt-4 m-auto"
+            >
+              <h2 class="fw-bold fs-1 fs-sm-4 fs-lg-1">
+                We help you make Modern Interior Design
+              </h2>
+              <p>
+                Create inviting and elegant spaces with our designs. Whether you
+                need a fresh look for your home or office, we help bring your
+                vision to life.
+              </p>
+              <button class="btn-explore btn-3 btn-dark rounded-4 w-50 btn">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- explore-new-design -->
+      <section class="explore-new-design padding">
+        <div class="container text-center">
+          <h2 class="fw-bold fs-1 fs-sm-4 fs-lg-1">Our New Collection</h2>
+          <div
+            class="row flex-lg-row d-flex align-content-center text-lg-start"
+          >
+            <!-- Cards -->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="row align-items-center p-3 rounded">
+                <div class="col-4">
+                  <img
+                    src="./images/json-images/dining-chair.png"
+                    alt="Kruzi Aero"
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="h5">Kruzi Aero</h3>
+                  <p class="mb-2">
+                    Comfort meets modern design with the Kruzi Aero chair.
+                  </p>
+                  <a href="#" class="btn btn-sm">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-12 mb-4 ms-auto">
+              <div class="row align-items-center p-3 rounded">
+                <div class="col-4">
+                  <img
+                    src="./images/json-images/dining-chair.png"
+                    alt="Ergonomic Chair"
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="h5">Ergonomic Chair</h3>
+                  <p class="mb-2">
+                    Discover comfort and style with our Ergonomic Chair
+                    collection.
+                  </p>
+                  <a href="#" class="btn btn-sm">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-12 mb-4 ms-auto">
+              <div class="row align-items-center p-3 rounded">
+                <div class="col-4">
+                  <img
+                    src="./images/json-images/dining-chair.png"
+                    alt="Luxury Lounge"
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3 class="h5">Luxury Lounge</h3>
+                  <p class="mb-2">
+                    style with the ultimate comfort of our Luxury Lounge Chair.
+                  </p>
+                  <a href="#" class="btn btn-sm">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- testimonials sec -->
+    <div class="testimonials padding">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="fw-bold fs-1 fs-sm-4 fs-lg-1">Testimonials</h1>
+        </div>
+      </div>
+
+      <div
+        id="testimonialsCarousel"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row text-center py-5">
+                <div class="col-10 m-auto">
+                  <p>
+                    I recently bought a sofa from [Your Website Name], and it
+                    exceeded my expectations. The design is modern, the fabric
+                    feels premium, and it’s incredibly comfortable. It fits
+                    perfectly in my living room and has become the centerpiece
+                    of the space. The ordering process was seamless, and
+                    customer service was responsive throughout. Delivery was
+                    slightly delayed, but the quality of the product made up for
+                    it. I’m thrilled with my purchase and will definitely shop
+                    here again.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="cli-pic rounded-circle overflow-hidden d-flex align-items-center justify-content-center m-auto"
+                  >
+                    <img
+                      src="https://media.gettyimages.com/id/1318928248/photo/portrait-of-a-young-man.jpg?s=612x612&w=0&k=20&c=ayy0fWfzLoC20BlYXDQmle1vz0a9Qrv8ssSwE3dLpzA="
+                      alt=""
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center py-5">
+                <div class="col-10 m-auto">
+                  <p>
+                    Shopping with [Your Website Name] was a fantastic
+                    experience. The recliner I bought is both stylish and
+                    functional, offering exceptional comfort after a long day.
+                    The fabric is high-quality and easy to clean, which is
+                    perfect for my busy household. Ordering was straightforward,
+                    and I appreciated the frequent updates on my shipment. The
+                    sofa arrived ahead of schedule, and the packaging was
+                    secure. It’s rare to find such reliable service and
+                    excellent products these days. I’ll be coming back for more!
+                  </p>
+                </div>
+                <div class="col-1 text-center"></div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="cli-pic rounded-circle overflow-hidden d-flex align-items-center justify-content-center m-auto"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/4342352/pexels-photo-4342352.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt=""
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center py-5">
+                <div class="col-10 m-auto">
+                  <p>
+                    I’ve never been so happy with a furniture purchase! The
+                    loveseat I ordered from [Your Website Name] is absolutely
+                    gorgeous and fits snugly in my small apartment. The texture
+                    of the material is so soft, and the neutral tone adds a cozy
+                    touch to my space. I had some doubts about buying furniture
+                    online, but the detailed product descriptions and images
+                    helped me make an informed decision. The delivery was
+                    smooth, and the sofa was in perfect condition. I’ll
+                    definitely be a returning customer.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="cli-pic rounded-circle overflow-hidden d-flex align-items-center justify-content-center m-auto"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/5257554/pexels-photo-5257554.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt=""
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center py-5">
+                <div class="col-1 text-center"></div>
+                <div class="col-10 m-auto">
+                  <p>
+                    I can’t say enough good things about [Your Website Name]!
+                    The sofa bed I ordered is perfect for both sitting and
+                    sleeping. It’s comfortable, sturdy, and looks amazing. My
+                    guests have already complimented how stylish it is, and the
+                    built-in storage is a lifesaver. The entire shopping process
+                    was stress-free, and the customer support team was extremely
+                    patient with my questions. Delivery was punctual, and setup
+                    was a breeze. I’m beyond satisfied with my purchase and
+                    highly recommend this store to anyone looking for quality
+                    furniture.
+                  </p>
+                </div>
+                <div class="col-1 text-center"></div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="cli-pic rounded-circle overflow-hidden d-flex align-items-center justify-content-center m-auto"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt=""
+                      class="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev rounded-circle circle-btn"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next circle-btn rounded-circle"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- design posts -->
+     <section class="posts-design padding">
+           <div class="row mb-3 text-end">
+                <a href="#" class="post-btn">View All Posts</a>
+           </div>
+           <div class="row flex-md-row flex-sm-column">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card w-100 border-0">
+                <img src="https://images.pexels.com/photos/3965534/pexels-photo-3965534.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top w-100 h-75" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cozy Living Room Ideas</h5>
+                  <p class="card-text">By Jane Doe on Dec 5th, 2023</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card w-100 border-0">
+                <img src="https://images.pexels.com/photos/5824519/pexels-photo-5824519.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top w-100 h-75" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exploring Modern Art</h5>
+                  <p class="card-text">By John Smith on Dec 6th, 2023</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card w-100 border-0">
+                <img src="https://images.pexels.com/photos/7195289/pexels-photo-7195289.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top w-100 h-75" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Minimalist Design Tips</h5>
+                  <p class="card-text">By Alex Lee on Dec 7th, 2023</p>
+                </div>
+              </div>
+            </div>
+           </div>
+     </section>
+
+     <!-- banner-full -->
+      <section class="banner">
+        <div class="img-ban">
+          <img src="https://img.freepik.com/premium-photo/potted-plant-table-home_1048944-5513550.jpg?ga=GA1.1.24328383.1694452068&semt=ais_hybrid" alt="" >
+        </div>
+      </section>
+
+      <!-- Footer -->
+       <footer class="footer-sec padding">
+            <div class="row flex-lg-row flex-sm-column">
+              <div class="col-lg-6 col-sm-12 py-5 flex-column d-flex justify-content-center">
+                <p class="fw-bold fs-6 text-center">Sign up for exclusive offers and updates:</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" class="border-0 " required>
+                    <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="./images/sofas-img/hero-sofa.png" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="row mb-5 flex-md-row flex-sm-column">
+                 <div class="col-md-4 col-sm-12 text-md-start text-sm-center">
+                  <h4>Company</h4>
+                   <div class="links d-flex flex-column ">
+                    <a href="https://www.furni.com/about-us">About Us</a>
+                   <a href="https://www.furni.com/shop">Shop</a>
+                   <a href="https://www.furni.com/blog">Blog</a>
+                   <a href="https://www.furni.com/contact-us">Contact Us</a>
+                   </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12 text-md-start text-sm-center">
+                  <h4>Support</h4>
+                 <div class="links d-flex flex-column">
+                  <a href="https://www.furni.com/faqs">FAQs</a>
+                  <a href="https://www.furni.com/live-chat">Live Chat</a>
+                  <a href="https://www.furni.com/privacy-policy">Privacy Policy</a>
+                  <a href="https://www.furni.com/returns">Returns</a>
+                 </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12 text-md-start text-sm-center">
+                  <h4>Explore</h4>
+                 <div class="links d-flex flex-column">
+                  <a href="https://www.furni.com/nordic-furniture">Nordic Furniture</a>
+                  <a href="https://www.furni.com/vintage">Vintage</a>
+                  <a href="https://www.furni.com/modern">Modern Design</a>
+                  <a href="https://www.furni.com/ergonomics">Ergonomics</a>
+                 </div>
+                 </div>
+            </div>
+            <hr>
+            <div class="row ">
+              <div class="col-4">
+                <p>Designed by <a href="https://www.furni.com/design-team" style="color: #333; text-decoration: none;">Hafsa Shahid</a></p>
+              </div>
+              <div class="col-4 text-center">
+                <p>© 2024 Furni. All Rights Reserved.</p>
+               
+              </div>
+              <div class="col-4 text-end">
+                <p>
+                  <a href="https://www.furni.com/terms" style="color: #333; text-decoration: none;">Terms of Service</a> |
+                  <a href="https://www.furni.com/privacy" style="color: #333; text-decoration: none;">Privacy Policy</a>
+              </p>
+              </div>
+            </div>
+       </footer>
+    <!-- custom script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="javascript/script.js"></script>
+
+  </body>
+</html>
