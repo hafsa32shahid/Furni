@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "category": "Living Room",
+      "type": "Sofa",
+      "name": "Modern Grey Sofa",
+      "price": 350,
+      "image": "images/json-images/sofa1.png"
+    },
+    {
+      "id": 2,
+      "category": "Living Room",
+      "type": "Chair",
+      "name": "Classic Armchair",
+      "price": 120,
+      "image": "images/json-images/chair1.png"
+    },
+    {
+      "id": 3,
+      "category": "Living Room",
+      "type": "Coffee Table",
+      "name": "Glass Coffee Table",
+      "price": 200,
+      "image": "images/json-images/coffe-table.png"
+    },
+    {
+      "id": 4,
+      "category": "Bedroom",
+      "type": "Bed",
+      "name": "King Size Bed",
+      "price": 600,
+      "image": "images/json-images/bed1.png"
+    },
+    {
+      "id": 5,
+      "category": "Bedroom",
+      "type": "Nightstand",
+      "name": "Wooden Nightstand",
+      "price": 80,
+      "image": "images/json-images/nightstand1.png"
+    },
+    {
+      "id": 7,
+      "category": "Dining Room",
+      "type": "Dining Table",
+      "name": "Extendable Dining Table",
+      "price": 500,
+      "image": "images/json-images/dining-table1.png"
+    },
+    {
+      "id": 8,
+      "category": "Dining Room",
+      "type": "Dining Chair",
+      "name": "Set of 4 Chairs",
+      "price": 300,
+      "image": "images/json-images/dining-chair.png"
+    },
+    {
+      "id": 9,
+      "category": "Dining Room",
+      "type": "Cabinet",
+      "name": "Glass Door Cabinet",
+      "price": 250,
+      "image": "images/json-images/cabinet.png"
+    }
+  ]
+  
